@@ -75,6 +75,7 @@ def otsi_toodet():
     otsimis_loop('---Toidumaailma sooduspakkumised:\n', Toidumaailmapakkumised, otsitav_toode)
     otsimis_loop("---Maxima sooduspakkumised:\n", Maximapakkumised, otsitav_toode)
     otsimis_loop("---Rimi sooduspakkumised\n", Rimipakkumised, otsitav_toode)
+    #Iga poeketi alla võiks lisada koodi, mis kirjutaks teksti, et pakkumised puuduvad,
     #juhul kui tõesti pole ühtegi sooduspakkumist vastavalt ketilt
     #
     #Samuti see funktsioon võiks selle info äkki tabelina display-ida
