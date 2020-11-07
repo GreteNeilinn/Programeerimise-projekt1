@@ -71,11 +71,20 @@ def otsimis_loop(poekett, sõnastik, toote_nimi):
 #Küsib toote nimetust ja prindib leitud tulemused
 def otsi_toodet():
     otsitav_toode = input("Sisestage otsitav toode: ").lower()
-    otsimis_loop('Toidumaailma sooduspakkumised:\n', Toidumaailmapakkumised, otsitav_toode)
-    otsimis_loop("Maxima sooduspakkumised:\n", Maximapakkumised, otsitav_toode)
-    otsimis_loop("Rimi sooduspakkumised\n", Rimipakkumised, otsitav_toode)
-    #Iga poeketi alla võiks lisada koodi, mis kirjutaks teksti, et pakkumised puuduvad,
+    print()
+    otsimis_loop('---Toidumaailma sooduspakkumised:\n', Toidumaailmapakkumised, otsitav_toode)
+    otsimis_loop("---Maxima sooduspakkumised:\n", Maximapakkumised, otsitav_toode)
+    otsimis_loop("---Rimi sooduspakkumised\n", Rimipakkumised, otsitav_toode)
     #juhul kui tõesti pole ühtegi sooduspakkumist vastavalt ketilt
+    #
+    #Samuti see funktsioon võiks selle info äkki tabelina display-ida
+    # nt:
+    # ---------------------------------
+    # |    Rimi sooduspakkumised      |
+    # ---------------------------------
+    # | Apelsin, 1kg          | 1.60€ |
+    # ---------------------------------
+    #Ma leidsin mingi pythoni mooduli tableprint, nii et seda saaks ka kasutada
 
 
 #Käivitab funktsiooni
@@ -84,8 +93,8 @@ otsi_toodet()
 
 #Käivitab funktsiooni uuesti, et ei peaks igakord refreshima
 while True:
-    taaskord = input("Uue toote otsimiseks vajutage ENTER ning programmi lõpetamiseks N: ")
-    if taaskord == 'N':
+    taaskord = input("Uue toote otsimiseks vajutage ENTER ning programmi lõpetamiseks X: ")
+    if taaskord == 'X':
         break
     otsi_toodet()
 
