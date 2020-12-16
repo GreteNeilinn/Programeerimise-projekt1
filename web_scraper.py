@@ -170,4 +170,3 @@ while True:
     otsi_toodet()
 
 
-
